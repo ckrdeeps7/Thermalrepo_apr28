@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>2. GM Scope &#8212; GMVCU v1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css?v=2bf1fcf8" />
+    
+    <script src="_static/documentation_options.js?v=5cb08e4e"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="3. Images" href="image.html" />
+    <link rel="prev" title="1. Bosch Scope" href="bosch.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="image.html" title="3. Images"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="bosch.html" title="1. Bosch Scope"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">GMVCU v1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">2. </span>GM Scope</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="gm-scope">
+<span id="index-0"></span><h1><span class="section-number">2. </span>GM Scope<a class="headerlink" href="#gm-scope" title="Link to this heading">¶</a></h1>
+<section id="vip">
+<h2><span class="section-number">2.1. </span>VIP<a class="headerlink" href="#vip" title="Link to this heading">¶</a></h2>
+<p>GM will own the SW components which built the main and central VCU Statelogic and co-ordinate with SW parts on the SOC.</p>
+</section>
+<section id="os-autosar-vector-microsar">
+<h2><span class="section-number">2.2. </span>OS: AUTOSAR (Vector MICROSAR)<a class="headerlink" href="#os-autosar-vector-microsar" title="Link to this heading">¶</a></h2>
+<p><strong>SystemStateController</strong>
+Determine and manage the system-state and propagate these to the state consumers in RTOS and Android.</p>
+<p><strong>SoC PLC State Controller</strong>
+Determine and manage the power-state of the VCU and propagate these to the state consumers in RTOS and Android.</p>
+<p><strong>SUM_SUSD</strong>
+SUM_SUSD is the StartupShutdown submodule of GM’s standard-utility-module library, coordinating the applicationst in terms of startup/shutdown with the underlying Autosar standard BSW modules and the StateControllers.</p>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">2. GM Scope</a><ul>
+<li><a class="reference internal" href="#vip">2.1. VIP</a></li>
+<li><a class="reference internal" href="#os-autosar-vector-microsar">2.2. OS: AUTOSAR (Vector MICROSAR)</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="bosch.html"
+                          title="previous chapter"><span class="section-number">1. </span>Bosch Scope</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="image.html"
+                          title="next chapter"><span class="section-number">3. </span>Images</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/gmscope.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="image.html" title="3. Images"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="bosch.html" title="1. Bosch Scope"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">GMVCU v1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">2. </span>GM Scope</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Thermal and LifeCycle Management.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
+    </div>
+  </body>
+</html>

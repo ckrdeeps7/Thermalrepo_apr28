@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>1. Bosch Scope &#8212; GMVCU v1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css?v=2bf1fcf8" />
+    
+    <script src="_static/documentation_options.js?v=5cb08e4e"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="2. GM Scope" href="gmscope.html" />
+    <link rel="prev" title="Welcome to GMVCU’s documentation!" href="index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="gmscope.html" title="2. GM Scope"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to GMVCU’s documentation!"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">GMVCU v1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">1. </span>Bosch Scope</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="bosch-scope">
+<span id="index-0"></span><h1><span class="section-number">1. </span>Bosch Scope<a class="headerlink" href="#bosch-scope" title="Link to this heading">¶</a></h1>
+<section id="vip">
+<h2><span class="section-number">1.1. </span>VIP<a class="headerlink" href="#vip" title="Link to this heading">¶</a></h2>
+<p>The power master is located on the VIP. This processor is connected to battery power and handles power switching for all purposes.</p>
+</section>
+<section id="os-autosar-vector-microsar">
+<h2><span class="section-number">1.2. </span>OS: AUTOSAR (Vector MICROSAR)<a class="headerlink" href="#os-autosar-vector-microsar" title="Link to this heading">¶</a></h2>
+<p>Bosch will implement <strong>SystemManager</strong> module, <strong>PowerManager</strong> module and <strong>VoltageMonitor</strong> sub-module.</p>
+<p>ASIL components for SoC state supervision and critical voltage monitoring, as described in detail by the SafteyApps concept, will have connections to System Manager and Power Manager module.</p>
+<p><strong>EcuM/BsWM</strong> These are AutoSAR stack components which together act as power state controller for the VIP AutoSAR domain. They maintain the ECU states based on their interaction with two sub-controllers, namely the SUM_SUSD and SysMgr, and broadcast relevant changes to all AutoSAR components.</p>
+<p><strong>SystemManager</strong> is response to coordinate low level sequences utilizing Bosch service SW modules.</p>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">1. Bosch Scope</a><ul>
+<li><a class="reference internal" href="#vip">1.1. VIP</a></li>
+<li><a class="reference internal" href="#os-autosar-vector-microsar">1.2. OS: AUTOSAR (Vector MICROSAR)</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="index.html"
+                          title="previous chapter">Welcome to GMVCU’s documentation!</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="gmscope.html"
+                          title="next chapter"><span class="section-number">2. </span>GM Scope</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/bosch.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="gmscope.html" title="2. GM Scope"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to GMVCU’s documentation!"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">GMVCU v1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">1. </span>Bosch Scope</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Thermal and LifeCycle Management.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
+    </div>
+  </body>
+</html>
