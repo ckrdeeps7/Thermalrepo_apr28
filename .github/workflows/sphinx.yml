@@ -1,0 +1,34 @@
+on:
+  push:
+    branches:
+      - main  # Change this if your default branch is different
+
+permissions:
+  contents: write  # Allow GitHub Actions to push to the repository
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set Up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+
+      - name: Install Dependencies
+        run: |
+          pip install sphinx
+          pip install furo  # Install your Sphinx theme if needed
+
+      - name: Build Documentation
+        run: sphinx-build -b html docs/source docs/build/html
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/build/html
+          publish_branch: gh-pages
